@@ -11,5 +11,8 @@
     "chai"
   ],
   "author": "maysha khanom moon",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
