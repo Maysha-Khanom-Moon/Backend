@@ -1,0 +1,14 @@
+{
+  "name": "data-modeling-by-mongoose",
+  "version": "1.0.0",
+  "description": "a basic app to start data modeling by mongoose",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "maysha khanom moon",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
