@@ -19,7 +19,7 @@ function App() {
 
   return (
     <>
-      <h1>Chai and full stack</h1>
+      <h1>Chai and full stack | youtube</h1>
       <p>JOKES: {jokes.length}</p>
 
       {

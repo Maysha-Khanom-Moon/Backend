@@ -3,9 +3,24 @@ import express from 'express';
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.get('/', (req, res) => {
-  res.send('Sever is ready');
-});
+
+/*
+ * Bad practice: after build the frontend, people move it to backend. then serve it as static files.
+ * and it will be served on the root path '/'
+ * 
+ * but any changes in frontend, will require rebuild and redeploy the backend server. Otherwise it will not work.
+*/
+app.use(express.static('dist'));
+
+/* 
+ * better practice is to use a dedicated server for frontend and backend separately
+ * and use proxy to resolve CORS issue
+ */
+
+
+// app.get('/', (req, res) => {
+//   res.send('Sever is ready');
+// });
 
 // get a list of 5 jokes
 app.get('/api/jokes', (req, res) => {
